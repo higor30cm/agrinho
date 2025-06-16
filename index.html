@@ -1,127 +1,225 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sustentabilidade na Programação</title>
+    <meta name="description" content="Site sobre sustentabilidade e práticas ecológicas para um futuro melhor">
+    <title>EcoVida - Sustentabilidade para Todos</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+        /* Estilos otimizados para performance */
+        :root {
+            --primary: #2E8B57;
+            --secondary: #3CB371;
+            --light: #F5F5F5;
+            --dark: #333;
+        }
+        
+        * {
             margin: 0;
             padding: 0;
-            color: #333;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
         }
+        
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+        
         header {
-            background: #2c8a5a;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: white;
-            padding: 1rem 0;
+            padding: 2rem 0;
             text-align: center;
         }
+        
         nav {
-            background: #333;
-            color: white;
-            padding: 0.5rem;
+            background: var(--dark);
+            position: sticky;
+            top: 0;
         }
+        
         nav ul {
-            padding: 0;
-            list-style: none;
             display: flex;
             justify-content: center;
+            list-style: none;
+            padding: 1rem;
+            flex-wrap: wrap;
         }
-        nav ul li {
+        
+        nav li {
             margin: 0 1rem;
         }
-        nav ul li a {
+        
+        nav a {
             color: white;
             text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem;
         }
+        
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 2rem 0;
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
         }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
+        
         .card {
             background: white;
-            margin: 1rem 0;
-            padding: 1rem;
-            border-radius: 5px;
+            border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        footer {
+            background: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .eco-tip {
+            background: #E8F5E9;
+            border-left: 4px solid var(--primary);
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Sustentabilidade na Programação</h1>
-        <p>Desenvolvimento web consciente para um futuro melhor</p>
+        <h1>EcoVida</h1>
+        <p>Pequenas atitudes, grandes mudanças</p>
     </header>
-
+    
     <nav>
         <ul>
             <li><a href="#inicio">Início</a></li>
             <li><a href="#praticas">Práticas Sustentáveis</a></li>
-            <li><a href="#ferramentas">Ferramentas</a></li>
-            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#reciclagem">Reciclagem</a></li>
+            <li><a href="#energia">Energia Limpa</a></li>
+            <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
-
+    
     <div class="container">
         <section id="inicio" class="card">
-            <h2>Por que sustentabilidade na programação?</h2>
-            <p>A indústria de tecnologia consome uma quantidade significativa de energia. Como desenvolvedores, podemos adotar práticas que reduzem o impacto ambiental de nossos aplicativos e websites.</p>
-            <p>Programação sustentável significa escrever código eficiente, otimizado e consciente do seu consumo de recursos.</p>
+            <h2>O que é Sustentabilidade?</h2>
+            <img src="https://via.placeholder.com/800x400?text=Sustentabilidade" alt="Conceito de sustentabilidade" loading="lazy">
+            <p>Sustentabilidade é a capacidade de satisfazer as necessidades do presente sem comprometer a capacidade das gerações futuras de satisfazerem as suas próprias necessidades.</p>
+            
+            <div class="eco-tip">
+                <h3>Dica Ecológica #1</h3>
+                <p>Reduza o uso de plásticos descartáveis. Uma garrafa de água reutilizável pode evitar mais de 100 garrafas plásticas por ano!</p>
+            </div>
         </section>
-
+        
         <section id="praticas" class="card">
-            <h2>Práticas Sustentáveis em HTML</h2>
+            <h2>Práticas Sustentáveis no Dia a Dia</h2>
             <ul>
-                <li><strong>Minificação de código:</strong> Remover espaços, quebras de linha e comentários desnecessários</li>
-                <li><strong>Semântica HTML:</strong> Usar elementos HTML corretos melhora a eficiência de renderização</li>
-                <li><strong>Otimização de imagens:</strong> Comprimir imagens e usar formatos modernos como WebP</li>
-                <li><strong>Carregamento preguiçoso (lazy loading):</strong> Adiar o carregamento de recursos não críticos</li>
-                <li><strong>CSS e JavaScript eficientes:</strong> Evitar código redundante e não utilizado</li>
+                <li>Reduza o consumo de água (banhos mais curtos, fechar torneiras)</li>
+                <li>Separe o lixo para reciclagem</li>
+                <li>Prefira produtos locais e sazonais</li>
+                <li>Use transportes sustentáveis (bicicleta, transporte público)</li>
+                <li>Consuma apenas o necessário e evite desperdícios</li>
+            </ul>
+            
+            <div class="eco-tip">
+                <h3>Dica Ecológica #2</h3>
+                <p>Desligue aparelhos eletrônicos da tomada quando não estiver usando. O modo standby ainda consome energia!</p>
+            </div>
+        </section>
+        
+        <section id="reciclagem" class="card">
+            <h2>Reciclagem: Como Fazer Corretamente</h2>
+            <img src="https://via.placeholder.com/800x400?text=Reciclagem" alt="Processo de reciclagem" loading="lazy">
+            
+            <h3>Materiais Recicláveis:</h3>
+            <ul>
+                <li><strong>Papel:</strong> Jornais, revistas, caixas de papelão</li>
+                <li><strong>Plástico:</strong> Garrafas, embalagens (limpas)</li>
+                <li><strong>Vidro:</strong> Garrafas, frascos (sem resíduos)</li>
+                <li><strong>Metal:</strong> Latas de alumínio, enlatados</li>
+            </ul>
+            
+            <h3>Materiais Não Recicláveis:</h3>
+            <ul>
+                <li>Papel higiênico, guardanapos sujos</li>
+                <li>Embalagens com resíduos de comida</li>
+                <li>Espelhos, cristais, cerâmicas</li>
+                <li>Clipes, grampos, esponjas de aço</li>
             </ul>
         </section>
-
-        <section id="ferramentas" class="card">
-            <h2>Ferramentas para Desenvolvimento Sustentável</h2>
-            <div>
-                <h3>Analisadores de Eficiência</h3>
-                <ul>
-                    <li>Google Lighthouse</li>
-                    <li>WebPageTest</li>
-                    <li>Website Carbon Calculator</li>
-                </ul>
-            </div>
-            <div>
-                <h3>Otimizadores</h3>
-                <ul>
-                    <li>HTML Minifier</li>
-                    <li>ImageOptim (para imagens)</li>
-                    <li>PurgeCSS (para remover CSS não utilizado)</li>
-                </ul>
+        
+        <section id="energia" class="card">
+            <h2>Energias Renováveis</h2>
+            <p>As energias renováveis são fundamentais para um futuro sustentável:</p>
+            
+            <h3>Tipos de Energia Limpa:</h3>
+            <ul>
+                <li><strong>Solar:</strong> Captação da luz do sol através de painéis fotovoltaicos</li>
+                <li><strong>Eólica:</strong> Geração de energia através da força dos ventos</li>
+                <li><strong>Hidrelétrica:</strong> Energia gerada pelo movimento da água</li>
+                <li><strong>Biomassa:</strong> Energia obtida de materiais orgânicos</li>
+                <li><strong>Geotérmica:</strong> Calor proveniente do interior da Terra</li>
+            </ul>
+            
+            <div class="eco-tip">
+                <h3>Dica Ecológica #3</h3>
+                <p>Considere instalar painéis solares em sua casa. O investimento inicial se paga com a economia na conta de luz!</p>
             </div>
         </section>
-
-        <section id="sobre" class="card">
-            <h2>Sobre este Projeto</h2>
-            <p>Este site foi criado para conscientizar desenvolvedores sobre práticas sustentáveis na programação web. A versão inicial foi desenvolvida com HTML básico para demonstrar que sites simples podem ser eficientes e ter baixo impacto ambiental.</p>
-            <p>Nosso objetivo é promover o desenvolvimento web sustentável sem sacrificar a experiência do usuário.</p>
+        
+        <section id="contato" class="card">
+            <h2>Entre em Contato</h2>
+            <p>Tem dúvidas ou sugestões sobre sustentabilidade? Fale conosco!</p>
+            
+            <form>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+                </div>
+                
+                <button type="submit">Enviar Mensagem</button>
+            </form>
         </section>
     </div>
-
+    
     <footer>
-        <p>&copy; 2023 Sustentabilidade na Programação. Todos os direitos reservados.</p>
-        <p>Este site foi otimizado para consumo mínimo de energia e recursos.</p>
+        <p>© 2023 EcoVida - Todos os direitos reservados</p>
+        <p>Este site foi desenvolvido com práticas sustentáveis de desenvolvimento web</p>
+        <p>Consumindo menos energia e recursos</p>
     </footer>
 </body>
 </html>
